@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Dulces Gustos - Administrador</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet"  href="css/administrador.css" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+</head>
+
+
+
+<body>
+
+        <header class="container-fluid d-flex flex-column ">
+                <!-- Menu Principal  para el tamaño LG-->
+                <section class="row nav align-items-stretch  fixed-top " id="navs">
+                    <section class="  contenedor-enlace align-items-stretch hidden-sm-down col-md-auto d-flex align-items-center justify-content-center justify-content-lg-start logo">
+                        <a class="" href="index.html">
+                            <img src="img/logo.png" alt="Dulces Gustos">
+                        </a>
+                    </section>
+                    <!-- ojooo-->
+                    <section id="mini-menu" class="col-12 mini-menu buscar-1 hidden-md-up">
+                        <form action="">
+                            <section class="row no-gutters align-items-center">
+                                <section class="columna col-10">
+                                    <input type="text" name="" id="" placeholder="Recetas,Ingrediente,Tipo de Dieta">
+                                </section>
+                                <section class="columna col-2 align-items-center justify-content-center text-center">
+                                    <button><i class="icon-search-outline"></i></button>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+        
+                    <section id="mini-menu" class="col-6 hidden-md-up mini-menu reg-usu align-items-stretch">
+                        <a href="publicacion.html" class="d-flex  text-center  flex-column ">
+                            <i class="icono icon-pencil"></i>
+                            <span>Publica tus Recetas o Tips</span>
+                        </a>
+                    </section>
+                    <!--Fin ojo-->
+        
+                    <nav id="mini-menu" class="  menu contenedor-enlace flex-wrap flex-md-nowrap mini-menu flex-wrap  d-flex col-12 col-md-5 ">
+                        <a href="recetas.html" class="c-1 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Recetas</span>
+                                <i class="icono icon-book"></i>
+                            </section>
+                        </a>
+                        <a href="tips.html" class="c-2 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Tips</span>
+                                <i class="icono icon-magic"></i>
+                            </section>
+                        </a>
+                        <a href="nosotros.html" class="c-3 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Nosotros</span>
+                                <i class="icono icon-child"></i>
+                            </section>
+                        </a>
+                    </nav>
+                    <!-- AQUI VA LO QUE SE VA A MODIFICAR-->
+                    <section id="mini-menu" class="col-6 icons mini-menu log  text-center col-md-1 d-flex align-items-stretch justify-content-center align-items-center colum-icons">
+                        <a href="administracion.html"  class="d-flex  enlace align-items-center align-items-stretch flex-column ">
+                            <i class="icono icon-user"></i>
+                            <span>Hola, Admin.</span>
+                        </a>
+                    </section>
+                    <section id="mini-menu" class="col-12 icons mini-menu help  text-center col-md-1 d-flex align-items-stretch justify-content-center align-items-center colum-icons">
+                        <a href="index.html"  class="d-flex  align-items-center align-items-stretch flex-column ">
+                            <i class="icono icon-cancel-outline"></i>
+                            <span>Desconectar</span>
+                        </a>
+                    </section>
+                </section>
+        
+                <a href="#" class="fondo-enlace hidden-md-up" id="fondo-enlace"></a>
+        
+                <section class="row hidden-sm-down  extra-btn d-flex rounded-top justify-content-between align-items-stretch">
+                    <section class="col-md-7 col-12 buscar  flex-wrap flex-sm-nowrap ">
+                        <form action="">
+                            <section class="row no-gutters align-items-center">
+                                <section class="columna col-10">
+                                    <input type="text" name="" id="" placeholder="Recetas,Ingrediente,Tipo de Dieta">
+                                </section>
+                                <section class="columna col-2">
+                                    <button><i class="icon-search-outline"></i></button>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+                    <section class="col-md-4 col-lg-3 col-12  reg-col d-flex align-items-stretch align-items-center">
+                        <a class="registro d-flex flex-column text-center align-items-center" href="publicacion.html">
+                            <i class="icono icon-pencil"></i>
+                            <span>Publica tus Recetas o Tips</span>
+        
+                        </a>
+                    </section>
+                </section>
+        
+        
+                <!-- Final del Menu Principal para el tamaño LG-->
+                <section class="row btn-menu d-flex justify-content-between hidden-md-up ">
+                    <a href="index.html" class="logo-menu col-2 d-flex flex-column justify-content-start">
+                        <!--<span>DG</span>-->
+                       <span>DG</span>
+                    </a>
+                    <a href="#" class="menu-icon col-10 d-flex flex-column justify-content-center align-items-end" id="btn-menus">
+                        <i class="icon-menu-outline icon-lg"></i>
+                    </a>
+                </section>
+        
+                <aside id="Social-nav" class="social-nav sticky-container">
+                    <ul>
+                        <li class="shop">
+                            <a href="#">
+                                <i class="icon-basket-1"></i>
+                                <span class="shop-text">Ver Tienda</span>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="icon-facebook"></i>
+                                <span class="name-social">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="icon-instagram"></i>
+                                <span class="name-social">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="icon-youtube"></i>
+                                <span class="name-social">Youtube</span>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/GustosDulces" target="_blank">
+                                <i class="icon-twitter"></i>
+                                <span class="name-social">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <!--FIn cambio-->
+            </header>
+        <main>
+            <section class="container-fluid contenedor">
+                     
+                <section class="row-c row  d-flex justify-content-center"> 
+                 <!--Menu de opciones--><!---->
+                    <section class="menu col-1 col-md-2 ">
+
+                        <section class="nav-admin row">
+                            <ul class="list">
+                                <li></li>
+                                <li class="item ">
+                                    <input type="radio" onClick="toggle(this)"  name="radio_btns" id="opcion_1"  value="opcion_1" checked="checked"  />
+                                </li>
+                                <li class="item op2 ">
+                                    <input type="radio" name="radio_btns" id="opcion_2"  value="opcion_2" />
+                                    <label class="label_opcion2 text-center bg-danger" for="opcion_2"><i class="icon icon-cart-plus"></i> <span class="hidden-md-down">Tienda </span> </label>
+                                    <ul class="submenu">
+                                        
+                                        <li class="item-sub opC">
+                                            <input type="radio" onclick='toggle(this)'  name="radio_btns" id="op-cat"  value="op-cat" onclick='' />
+                                            <label class="op-cat text-center" for="op-cat"><i class="icon1 icon-tags "></i> <span class="hidden-md-down">Categorías </span> </label>
+                                        </li>
+                                        <li class="item-sub opP">
+                                            <input type="radio" onclick='toggle(this)'  name="radio_btns" id="op-pro"  value="op-pro" onclick='' />
+                                            <label class="op-pro text-center" for="op-pro"><i class="icon1 icon-food"></i> <span class="hidden-md-down">Productos</span> </label>
+                                        </li>
+
+                                    </ul>         
+                                </li>
+                                <li class="item op3 ">
+                                    <input type="radio" name="radio_btns" id="opcion_3" value="opcion_3"  onclick='toggle(this)' />
+                                    <label class="label_opcion3 bg-danger text-center" title="pedidos" for="opcion_3"><i class="icon icon-pencil"></i> <span class="hidden-md-down">Pedidos</span> </label>
+                                    
+                                    <ul class="submenu">
+                                        <li class="item-sub opO">
+                                            <input type="radio" onclick='toggle(this)'  name="radio_btns" id="op-or"  value="op-or" onclick='' />
+                                            <label class="op-or text-center" for="op-or"><i class="icon1 icon-doc-text"></i><span class="hidden-md-down">Ordenes</span> </label>
+                                        </li>
+                                        <li class="item-sub opH">
+                                            <input type="radio" onclick='toggle(this)'  name="radio_btns" id="op-hi"  value="op-hi" onclick='' />
+                                            <label class="op-hi text-center" for="op-hi"><i class="icon1 icon-history"></i> <span class="hidden-md-down">Historial</span> </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                                 
+                    </section>
+                <!--Contenido -->
+                    <section class="contenido col-10 ">
+                        <!--Contenido Bienvenida Administrador -->
+                        <section class="row"  id="content_opcion1">
+                            <section class="col-12">
+                                <section class="bienvenida"  >
+                                     <p>Bienvenido.!!!</p> 
+                                </section>
+                            </section>
+                        </section>
+                        <!--Contenido Administrar tienda -->
+                        <section class= "row  hidden-xl-down"  id="content_opcion2">
+                            <section class="col-opcion2 col-12" >
+
+                                <!--Seccion de categorias-->
+                                <section class="row section-categorias  hidden-xl-down justify-content-center align-items-center  d-flex " id="content-cat">
+                                    <section class="col-md-10 col-12 col-sc">
+                                        <h3><i class="icon icon-tags"></i>Categorías</h3>
+                                        <form action="">
+                                            <!--Seccion de buscar-->
+                                            <section id="buscar" class="buscar">
+                                                <label for="">
+                                                    <input type="search" placeholder="Buscar" class placeholder aria-controls="example">
+                                                    <button><i class="icon icon-search-outline"></i></button>
+                                                </label>
+                                            </section> 
+                                                <!--Seccion de boton agregar categoria-->
+                                            <section class="agregar">
+                                                    <button class="btn btn-success  buttons-agregar" data-toggle="modal" data-target="#crearModalC"   type="button"><span> <i class="icon icon-plus-outline"></i> Agregar Categoría</span></button>
+                                            </section>
+                                            
+                                                <!--Seccion de la tabla de categorias-->
+                                            <section class="content-panel table-responsive">
+                                                
+                                                <table class="table table-categoria ">
+                                                    <thead >
+                                                        <tr >
+                                                            <th> Codigo</th>
+                                                            <th></i>Categoría</th>
+                                                            <th> Descripción</th>
+                                                            <th class="medida"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12201</a></td>
+                                                            <td>Galletas</td>
+                                                            <td>Gran variedad de galletas</td>
+                                                            <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>151515</a></td>
+                                                            <td>Hojaldre</td>
+                                                            <td>Productos de tipo hojaldre</td>
+                                                            <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>       
+                                                        <tr>
+                                                            <td>12201</a></td>
+                                                            <td>Galletas</td>
+                                                            <td>Gran variedad de galletas</td>
+                                                            <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>151515</a></td>
+                                                            <td>Hojaldre</td>
+                                                            <td>Productos de tipo hojaldre</td>
+                                                            <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>              
+                                                    </tbody>
+                                                </table>       
+                                            </section>
+                                        
+                                        </form>
+                                                <!--Modal para registro de categoria-->
+                                        <section class="modal fade modal-categoria" id="crearModalC" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <section class="modal-dialog">
+                                                <section class="modal-content ">
+                                                    <form action="">
+                                                        <section class="modal-header">
+                                                            <h3>NUEVA CATEGORÍA</h3>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            </section>
+                                                        <section class="modal-body justify-content-center d-flex">
+                                                            <section class="form-group">
+                                                                <label for="categoria">*CategorÍa</label>
+                                                                <input type="text" placeholder="" name="categoria" id="categoria" class="form-control" required>
+                                                                <label for="producto">DescripciÓn</label>
+                                                                <input type="text" placeholder="" name="descripcion" id="descripcion" class="form-control" >
+                                                            </section> 
+                                                        </section>
+                                                        <section class="modal-footer">
+                                                            <button type="submit" class="guardar" id="guardar" >Guardar Categoria</button>
+                                                        </section> 
+                                                    </form>
+                                                </section>
+                                            </section>
+                                        </section>
+                                          
+                                    </section>
+                                </section>
+                                                    <!--Seccion de productos-->
+                                <section class="row section-productos hidden-xl-down justify-content-center align-items-center  d-flex " id="content-pro">
+                                    <section class="col-md-10 col-12 col-sp ">
+                                              <h3><i class="icon icon-food"></i>Productos</h3>
+                                        <!---->
+                                        <form action="">
+                                          
+                                            <!--Seccion de buscar-->
+                                            <section id="buscar" class="datatables_buscar">
+                                               <label for="">
+                                                    <input type="search" placeholder="Buscar" class placeholder aria-controls="example">
+                                                    <button><i class="icon-search-outline"></i></button>
+                                                </label>
+                                            </section>  
+                                            <!--Seccion de boton agregar productos-->        
+                                            <section class="agregar">
+                                                <button class="btn btn-success buttons-selected buttons-agregar" data-toggle="modal" data-target="#crearModalP"   type="button"><span> <i class="icon icon-plus-outline"></i>Agregar Producto</span></button>
+                                            </section>    
+                                            <section class="content-panel table-responsive">
+                                                <table class="table table-producto ">
+                                                    <thead> 
+                                                        <tr >
+                                                            <th class="categoria" tabindex="0" aria-controls="listado_productos" rowspan="1" colspan="1" >Codigo</th>
+                                                            <th class="producto" >Categoria</th>
+                                                            <th class="producto" >Producto</th>
+                                                            <th class="cantidad">Cant</th>
+                                                            <th class="precio" >PRECIO</th>
+                                                            <th class="caducidad" >Caducidad</th>
+                                                            <th class="op-estatus"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="tbody">
+                                                        <tr >
+                                                            <td >124656 </td>
+                                                            <td >TORTA ESPONJOSA</td>
+                                                            <td>PONQUES</td>
+                                                            <td>12</td>
+                                                            <td>1000</td>
+                                                            <td>12-12-2012</td>
+                                                            <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td >124656</td>
+                                                            <td >HOJALDRE</td>
+                                                            <td>ESTRELLA DIAMANTE</td>
+                                                            <td>12</td>
+                                                            <td>1000</td>
+                                                            <td>12-12-2012</td>
+                                                                <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>">124656</td>
+                                                            <td >HOJALDRE</td>
+                                                            <td>PASTELITOS</td>
+                                                            <td>12</td>
+                                                            <td>1000</td>
+                                                            <td>12-12-2012</td>
+                                                            <td>
+                                                                <button class="btn btn-success btn-xs" title="Editar"><i class="icon icon-pencil"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Eliminar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </section>
+                                        </form>
+
+                                                            <!--Modal para el registro de Producto-->
+                                        <section class="modal fade modal-regist" id="crearModalP" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <section class="modal-dialog">
+                                                        <section class="modal-content ">
+                                                            <form action="">
+                                                                <section class="modal-header">
+                                                                    <h3>NUEVO PRODUCTO</h3>
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </section>
+                                                                <section class="modal-body justify-content-center d-flex">
+                                                                    <section class="form-group">
+                                                                        <label for="categoria">*Categoría</label>
+                                                                        <input type="text" placeholder="" name="categoria" id="categoria" class="form-control" required>
+                                                                        <label for="producto">*Producto</label>
+                                                                        <input type="text" placeholder="" name="producto" id="producto" class="form-control" required >
+                                                                        <label for="cant">Cantidad</label>
+                                                                        <input type="text" placeholder="" name="cant" id="cant" class="form-control" >
+                                                                        <label for="precio">Precio</label>
+                                                                        <input type="text" placeholder="" name="precio" id="precio" class="form-control" >
+                                                                        <label for="vc">Vencimiento</label>
+                                                                        <input type="date" placeholder="" name="vc" id="vc" class="form-control" >
+                                                                    </section> 
+                                                                </section>
+                                                                <section class="modal-footer">
+                                                                    <button type="submit" class="guardar" id="guardar" >Guardar</button>
+                                                                </section> 
+                                                            </form>
+                                                        </section>
+                                                    </section>
+                                        </section> 
+                                                       
+                                    </section>
+                                </section>   
+
+                            </section>
+                        </section>  
+                        <!--Contenido de 0pedidos solicitados por los-->
+                        <section class="row hidden-xl-down" id="content_opcion3">
+                            <section class="col-op4 col-12">
+                                <section class="row hidden-xl-down pedidos justify-content-center align-items-center d-flex" id="pedidos">
+                                    <section class="col-10 contentp">
+                                        <h3><i class="icon icon-doc-text"></i> Ordenes de Productos</h3>
+                                        <section class="content-panel table-responsive">
+                                            <!--Tabla de pedidos -->
+                                            <table class="table  table-condensed table-hover table-striped tableCat ">
+                                           
+                                                    <thead>
+                                                        <tr>
+                                                            <th><i class="icon icon-list"></i> Codigo</th>
+                                                            <th class="hidden-phone"><i class="icon icon-user-1"></i>Cliente</th>
+                                                            <th><i class="icon icon-calc"></i> Total</th>
+                                                            <th><i class="icon icon-edit"></i>Estatus Pago</th>
+                                                            <th></th>
+                                                            <th><i class="icon icon-edit"></i>Fecha</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="home_emp.html" data-toggle="modal" data-target="#MyModalI">12201</a></td>
+                                                            <td class="hidden-phone">Luis Perez</td>
+                                                            <td>12000.00$ </td>
+                                                            <td><span class="label badge-success label-mini">listo</span></td>
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-xs" title="reporte"><i class="icon icon-book"></i></a>
+                                                                <button class="btn btn-success btn-xs" title="Aprobar"><i class="icon icon-ok-outline"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Rechazar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                            <td>19/03/15</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="home_emp.html" data-toggle="modal" data-target="#MyModalI">231015 </a></td>
+                                                            <td class="">Wladimir Go</td>
+                                                            <td>17900.00$ </td>
+                                                            <td><span class="label badge-warning label-mini">Pendiente</span></td>
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-xs" title="reporte"><i class="icon icon-book"></i></a>
+                                                                <button class="btn btn-success btn-xs" title="Aprobar"><i class="icon icon-ok-outline"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Rechazar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                            <td>19/03/15</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="home_emp.html" data-toggle="modal" data-target="#MyModalI">231015 </a></td>
+                                                            <td class="">Wladimir Go</td>
+                                                            <td>17900.00$ </td>
+                                                            <td><span class="label badge-warning  label-mini">Pendiente</span></td>
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-xs" title="reporte"><i class="icon icon-book"></i></a>
+                                                                <button class="btn btn-success btn-xs" title="Aprobar"><i class="icon icon-ok-outline"></i></button>
+                                                                <button class="btn btn-danger btn-xs" title="Rechazar"><i class="icon icon-cancel-outline"></i></button>
+                                                            </td>
+                                                            <td>19/03/15</td>
+                                                        </tr>                   
+                                                                    
+                                                    </tbody>
+                                            </table>
+                                        </section>             
+                                        <!--Mostrando modal con la informacion del pedido-->
+                                            <section class="modal fade modal-regist" id="MyModalI" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                         <section class="modal-dialog">
+                                                             <section class="modal-content ">
+                                                                 <form action="">
+                                                                        <section class="modal-header">
+                                                                             <h3>Informacion De Pedido</h3>
+                                                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                        </section>
+                                                                        <section class="modal-body justify-content-center d-flex">
+                                                                            <section class="form-group">
+                                                                                <label for="">Codigo: 456418</label>
+                                                                                <label for="">Productos:Fresas DIamante Categoria: Hojaldre PRecio:2548$</label>
+                                                                                <label for="">Productos:Fresas DIamante Categoria: Hojaldre PRecio:2548$</label>
+                                                                                <label for="">Productos:Fresas DIamante Categoria: Hojaldre PRecio:2548$</label>
+                                                                                <label for="">Total:51881</label>
+                                                                            </section> 
+                                                                        </section>
+                                                                 </form>
+                                                             </section>
+                                                         </section>
+                                            </section>
+                                    
+                                    </section>
+                                </section>
+
+                                <section class="row hidden-xl-down historial justify-content-center align-items-center d-flex" id="historial" >
+                                    <section class="col-10"> 
+                                       <h3><i class="icon icon-history"></i>Historial De Pedidos</h3>
+                                                <section class=" content-panel table-responsive-xs ">
+                                                   
+                                                <table class=" table ">
+                                                   
+                                                    <thead>
+                                                        <tr >
+                                                            <th> Codigo</th>
+                                                            <th></i>Cliente</th>
+                                                            <th> Descripcion</th>
+                                                            <th >Estatus</th>
+                                                            <th>Fecha</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>12201</a></td>
+                                                            <td>Galletas</td>
+                                                            <td>Gran variedad de galletas</td>
+                                                            <td>Aprovado</td>
+                                                            <td>19/09/18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>151515</a></td>
+                                                            <td>Hojaldre</td>
+                                                            <td>Productos de tipo hojaldre</td>
+                                                            <td>Aprovado</td>
+                                                            <td>19/09/18</td>
+                                                        </tr>       
+                                                        <tr>
+                                                            <td>12201</a></td>
+                                                            <td>Galletas</td>
+                                                            <td>Gran variedad de galletas</td>
+                                                            <td>Aprovado</td>
+                                                            <td>19/09/18</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>151515</a></td>
+                                                            <td>Hojaldre</td>
+                                                            <td>Productos de tipo hojaldre</td>
+                                                            <td>Aprovado</td>
+                                                            <td>19/09/18</td>
+                                                        </tr>              
+                                                    </tbody>
+                                                </table>       
+                                            </section>
+                                    </section>
+                                            
+                                </section>
+                            </section>
+                        </section>
+
+                        
+
+                       
+                    </section>
+                </section>
+            </section>
+            
+         </main>
+                 
+       
+</body>
+<script src="js/tether.min.js "> </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/administrador.js"> </script>
+  <script src="js/principal.js"></script>
+  <script src="js/nav.js"></script>
+</html>

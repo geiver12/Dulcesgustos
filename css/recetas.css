@@ -1,0 +1,349 @@
+
+.navig{
+    width: 100%;
+    left: -13px;
+}
+    .navigation {
+  width: 100%;
+
+}
+
+.navigation h3{
+    color: #9b030a;
+}
+
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu a {
+  display: block;
+  background-color: #6271b3;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 2px solid #333;
+}
+.mainmenu a:hover {
+    background-color: rgba(98,113,179,.8);
+}
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+
+
+
+.submenu a {
+  background-color: #979cb3;
+}
+
+
+.submenu a:hover {
+  background-color: #666;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  transition: all .5s ease;
+}
+
+
+.caption-style{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.caption-style .items-1,
+.caption-style .items-2,
+.caption-style .items-3,
+.caption-style .items-4,
+.caption-style .items-5,
+.caption-style .items-6,
+.caption-style .items-7,
+.caption-style .items-8,
+.caption-style .items-9,
+.caption-style .items-10,
+.caption-style .items-11,
+.caption-style .items-12,
+.caption-style .items-13,
+.caption-style .items-14,
+.caption-style .items-15
+{
+    width: 100%;
+    height: 250px;
+    float: left;
+	padding: 0px;
+	position: relative;
+    overflow: hidden;
+    margin: 0px;
+    z-index: 0;
+    transition:all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.caption-style .items-1{
+    background-image: url('../img/recetas/fresa-diamante.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.caption-style .items-2{
+    background-image: url('../img/recetas/soufleglace-chocolate.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.caption-style .items-3{
+    background-image: url('../img/recetas/torta-damero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.caption-style .item{
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.caption-style .items-4{
+    background-image: url('../img/recetas/ponques.jpg');
+}
+
+.caption-style .items-5{
+    background-image: url('../img/recetas/tarta-naranja.jpg');
+}
+.caption-style .items-6{
+    background-image: url('../img/recetas/muffin.jpg');}
+.caption-style .items-7{
+    background-image: url('../img/recetas/cumpleaños.jpg');
+}
+.caption-style .items-8{
+    background-image: url('../img/recetas/chispas.jpg');
+}
+.caption-style .items-9{
+    background-image: url('../img/recetas/torta-fria.jpg');
+}
+.caption-style .items-10{
+    background-image: url('../img/recetas/cachitos.jpg');
+}
+.caption-style .items-11{
+    background-image: url('../img/recetas/dulces-bocados.jpg'); 
+}
+.caption-style .items-12{
+    background-image: url('../img/recetas/ponquesitos.jpg');
+}
+.caption-style .items-13{
+    background-image: url('../img/recetas/torta-chocolate.jpg');
+}
+.caption-style .items-14{
+    background-image: url('../img/recetas/milhojas.JPG');
+}
+.caption-style .items-15{
+    background-image: url('../img/recetas/Red-Velvet.jpg');
+}
+
+
+.caption-style .blur{
+	background-color: rgba(0,0,0,0.65);
+	height: 200%;
+	width: 400px;
+    z-index: 9;
+    position: absolute;
+    top: -50px;
+}
+    
+.caption-style .caption-text h1{
+	text-transform: uppercase;
+    font-size: 24px;
+    color:rgb(245, 222, 179);
+    
+}   
+
+.caption-style a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color:rgb(245, 222, 179);
+ 
+    
+}
+
+.caption-style .caption-text{
+	z-index: 10;
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    text-align: center;
+    top: -45px;
+
+}
+
+.caption-style .caption-text p{
+    width: 100%;
+}
+
+
+.caption-style .title-receta{
+    background: rgba(0,0,0,.8);
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.caption-style a p{
+    margin: 0;
+    text-align: justify;
+}
+
+.caption-style  a .caption{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+		position: absolute;
+		opacity: 0;
+        transition:all 0.3s ease-in-out;
+       
+}
+.caption-style .items-1:hover .title-receta,
+.caption-style .items-2:hover .title-receta,
+.caption-style .items-3:hover .title-receta,
+.caption-style .items-4:hover .title-receta,
+.caption-style .items-5:hover .title-receta,
+.caption-style .items-6:hover .title-receta,
+.caption-style .items-7:hover .title-receta,
+.caption-style .items-8:hover .title-receta,
+.caption-style .items-9:hover .title-receta,
+.caption-style .items-10:hover .title-receta,
+.caption-style .items-11:hover .title-receta,
+.caption-style .items-12:hover .title-receta,
+.caption-style .items-13:hover .title-receta,
+.caption-style .items-14:hover .title-receta,
+.caption-style .items-15:hover .title-receta
+{
+    visibility: hidden;
+    transition: all .1s ease;
+
+}
+
+
+
+.caption-style .items-1:hover ,
+.caption-style .items-2:hover ,
+.caption-style .items-3:hover,
+.caption-style .items-4:hover,
+.caption-style .items-5:hover,
+.caption-style .items-6:hover,
+.caption-style .items-7:hover,
+.caption-style .items-8:hover,
+.caption-style .items-9:hover,
+.caption-style .items-10:hover,
+.caption-style .items-11:hover,
+.caption-style .items-12:hover,
+.caption-style .items-13:hover,
+.caption-style .items-14:hover,
+.caption-style .items-15:hover
+{
+    
+    
+		opacity: 1;
+		transform: scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-ms-transform:scale(1.15,1.15);
+        -o-transform:scale(1.15,1.15);
+    
+    
+	}
+
+.caption-style .items-1:hover .caption,
+.caption-style .items-2:hover .caption,
+.caption-style .items-3:hover .caption,
+.caption-style .items-4:hover .caption,
+.caption-style .items-5:hover .caption,
+.caption-style .items-6:hover .caption,
+.caption-style .items-7:hover .caption,
+.caption-style .items-8:hover .caption,
+.caption-style .items-9:hover .caption,
+.caption-style .items-10:hover .caption,
+.caption-style .items-11:hover .caption,
+.caption-style .items-12:hover .caption,
+.caption-style .items-13:hover .caption,
+.caption-style .items-14:hover .caption,
+.caption-style .items-15:hover .caption
+{
+        opacity: 1;
+    
+}
+    
+.pagination__controls {
+    text-align: center;
+}
+
+
+.all-recetas{
+    height: 100%;
+}
+
+.fil-total{
+    height: 100%;
+}
+
+
+.pagination-indicator {
+    font-size: 12px;
+    color: rgb(189, 189, 189);
+}
+
+.pagination-container {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.pagination-container .pagination__item {
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.pagination-container .pagination__item .pagination__link {
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba(85, 85, 85, .1);
+    color: #6271b3;
+    text-decoration: none;
+    border-radius: 27px;
+}
+
+.pagination-container .pagination__item--current .pagination__link {
+    color: rgb(255, 255, 255);
+    background-color: #6271b3;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:768px){
+    .navigation {
+        width: 100%;
+      
+      }
+      .navigation h3{
+          font-size: 25px;
+      }
+       .mainmenu li{
+          width: 100%;
+          text-align: center;
+
+      }
+
+     
+}

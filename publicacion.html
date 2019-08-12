@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dulces Gustos - Publica tu Receta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/publicar.css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Oswald:200,300,500,600" rel="stylesheet">
+    <script src="js/tether.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+        <header class="container-fluid d-flex flex-column ">
+                <!-- Menu Principal  para el tamaño LG-->
+                <section class="row nav align-items-stretch  fixed-top " id="navs">
+                    <section class="  contenedor-enlace align-items-stretch hidden-sm-down col-md-auto d-flex align-items-center justify-content-center justify-content-lg-start logo">
+                        <a class="" href="index.html">
+                            <img src="img/logo.png" alt="Dulces Gustos">
+                        </a>
+                    </section>
+                    <!-- ojooo-->
+                    <section id="mini-menu" class="col-12 mini-menu buscar-1 hidden-md-up">
+                        <form action="">
+                            <section class="row no-gutters align-items-center">
+                                <section class="columna col-10">
+                                    <input type="text" name="" id="" placeholder="Recetas,Ingrediente,Tipo de Dieta">
+                                </section>
+                                <section class="columna col-2 align-items-center justify-content-center text-center">
+                                    <button><i class="icon-search-outline"></i></button>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+        
+                    <section id="mini-menu" class="col-6 hidden-md-up mini-menu reg-usu align-items-stretch">
+                        <a href="publicacion.html" class="d-flex  text-center  flex-column ">
+                            <i class="icono icon-pencil"></i>
+                            <span>Publica tus Recetas o Tips</span>
+                        </a>
+                    </section>
+                    <!--Fin ojo-->
+        
+                    <nav id="mini-menu" class="  menu contenedor-enlace flex-wrap flex-md-nowrap mini-menu flex-wrap  d-flex col-12 col-md-5 ">
+                        <a href="recetas.html" class="c-1 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Recetas</span>
+                                <i class="icono icon-book"></i>
+                            </section>
+                        </a>
+                        <a href="tips.html" class="c-2 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Tips</span>
+                                <i class="icono icon-magic"></i>
+                            </section>
+                        </a>
+                        <a href="nosotros.html" class="c-3 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Nosotros</span>
+                                <i class="icono icon-child"></i>
+                            </section>
+                        </a>
+                    </nav>
+                    <!-- AQUI VA LO QUE SE VA A MODIFICAR-->
+                    <section id="mini-menu" class="col-6 icons mini-menu log  text-center col-md-1 d-flex align-items-stretch justify-content-center align-items-center colum-icons">
+                        <a href="administracion.html"  class="d-flex  enlace align-items-center align-items-stretch flex-column ">
+                            <i class="icono icon-user"></i>
+                            <span>Hola, Admin.</span>
+                        </a>
+                    </section>
+                    <section id="mini-menu" class="col-12 icons mini-menu help  text-center col-md-1 d-flex align-items-stretch justify-content-center align-items-center colum-icons">
+                        <a href="index.html"  class="d-flex  align-items-center align-items-stretch flex-column ">
+                            <i class="icono icon-cancel-outline"></i>
+                            <span>Desconectar</span>
+                        </a>
+                    </section>
+                </section>
+        
+                <a href="#" class="fondo-enlace hidden-md-up" id="fondo-enlace"></a>
+        
+                <section class="row hidden-sm-down  extra-btn d-flex rounded-top justify-content-between align-items-stretch">
+                    <section class="col-md-7 col-12 buscar  flex-wrap flex-sm-nowrap ">
+                        <form action="">
+                            <section class="row no-gutters align-items-center">
+                                <section class="columna col-10">
+                                    <input type="text" name="" id="" placeholder="Recetas,Ingrediente,Tipo de Dieta">
+                                </section>
+                                <section class="columna col-2">
+                                    <button><i class="icon-search-outline"></i></button>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+                    <section class="col-md-4 col-lg-3 col-12  reg-col d-flex align-items-stretch align-items-center">
+                        <a class="registro d-flex flex-column text-center align-items-center" href="publicacion.html">
+                            <i class="icono icon-pencil"></i>
+                            <span>Publica tus Recetas o Tips</span>
+        
+                        </a>
+                    </section>
+                </section>
+        
+        
+                <!-- Final del Menu Principal para el tamaño LG-->
+                <section class="row btn-menu d-flex justify-content-between hidden-md-up ">
+                    <a href="index.html" class="logo-menu col-2 d-flex flex-column justify-content-start">
+                        <!--<span>DG</span>-->
+                       <span>DG</span>
+                    </a>
+                    <a href="#" class="menu-icon col-10 d-flex flex-column justify-content-center align-items-end" id="btn-menus">
+                        <i class="icon-menu-outline icon-lg"></i>
+                    </a>
+                </section>
+        
+                <aside id="Social-nav" class="social-nav sticky-container">
+                    <ul>
+                        <li class="shop">
+                            <a href="#">
+                                <i class="icon-basket-1"></i>
+                                <span class="shop-text">Ver Tienda</span>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="icon-facebook"></i>
+                                <span class="name-social">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="icon-instagram"></i>
+                                <span class="name-social">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="icon-youtube"></i>
+                                <span class="name-social">Youtube</span>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/GustosDulces" target="_blank">
+                                <i class="icon-twitter"></i>
+                                <span class="name-social">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <!--FIn cambio-->
+            </header>
+
+    <main class="container mb-5">
+        <section class="row mb-2" id="prueba1">
+            <header class="col-12 d-flex justify-content-center align-items-center">
+                <h2 class="title"> Comparte tus recetas</h2>
+            </header>
+        </section>
+        <form action="" class="row d-flex justify-content-center">
+            <section class=" col-12 col-lg-6">
+                <section class="row mb-2">
+                    <section class="form-group col-12">
+                        <label for="nombre" class="form-check-label pl-1">Nombre: </label>
+                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre de la receta."
+                            required>
+                    </section>
+                    <section class="form-group col-12">
+                        <label for="duracion" class="form-check-label pl-1">Duración: </label>
+                        <input type="text" name="duracion" class="form-control" id="duracion" placeholder="Duracion en Minutos."
+                            required>
+                    </section>
+                    <section class="form-group col-12">
+                        <label for="dif" class="form-check-label pl-1">Dificulta:</label>
+                        <select name="dif" class=" form-control custom-select" id="dif" required>
+                            <option value="facil">Fácil</option>
+                            <option value="media">Media</option>
+                            <option value="dificil">Difícil</option>
+                        </select>
+                    </section>
+                </section>
+            </section>
+            <section class=" col-lg-6 col-12 d-lg-flex justify-content-between">
+                <section class="row ">
+                    <section class="col-12 descrip form-group">
+                        <label for="descr" class="form-check-label pl-1">Descripción: </label>
+                        <textarea name="descr" id="descr" maxlength="50" class="form-control noresize"></textarea>
+                    </section>
+                    <section class="col-12">
+                        <label for="foto" class="form-check-label pl-1">Adjuntar un archivo:</label>
+                        <input type="file" class="form-control" name="foto" id="foto" required>
+                        <p class="help-block">Formato Permitido: JPG/JPEG/PNG.</p>
+                    </section>
+                </section>
+            </section>
+            <section class="col-12 mb-3">
+                <section class="row">
+                    <section class="col-lg-6 col-12">
+                        <section class="row">
+                            <section class="col-12 d-flex justify-content-center">
+                                <h4 class="title">¿Qué ingredientes necesita tu receta?</h4>
+                            </section>
+                            <section class=" col-12 d-flex justify-content-between">
+                                <p>Ingrediente</p>
+                                <p>Cantidad</p>
+                                <p>Medida</p>
+                            </section>
+                        </section>
+                        <section class="col-12 mt-2 p-0 prueba" id="ingred">
+                        </section>
+                        <section class="col-12 d-flex mt-3 justify-content-center">
+                            <button class="btn btn-danger btn-circle mr-1" type="button" onclick="delIngrediente()" id="btn-tool"
+                                data-toggle="tooltip" data-placement="bottom" title="Eliminar Ingrediente."><i class="icon-minus-outline"></i></button>
+                            <button class="btn btn-success btn-circle ml-1" type="button" onclick="addIngrediente()" id="btn-tool"
+                                data-toggle="tooltip" data-placement="bottom" title="Añadir Ingrediente."><i class="icon-plus-outline "></i></button>
+                        </section>
+                    </section>
+
+                    <section class="col-lg-6 col-12">
+                        <section class="row">
+                            <section class="col-12 text-center">
+                                <h4>¿Qué preparación tiene tu receta?</h4>
+                            </section>
+                        </section>
+                        <section class="row">
+                            <section class=" col-12 text-center">
+                                <p>Paso a paso de la preparación.</p>
+                            </section>
+                        </section>
+                        <section class="row" id="pasos-receta">
+                        </section>
+
+                        <section class="row">
+                            <section class="col-12 d-flex mt-3 justify-content-center">
+                                <button class="btn btn-danger btn-circle mr-1" type="button" onclick="delPasos()" id="btn-tool"
+                                    data-toggle="tooltip" data-placement="bottom" title="Eliminar Paso."><i class="icon-minus-outline"></i></button>
+                                <button class="btn btn-success btn-circle ml-1" type="button" onclick="addPasos()" id="btn-tool"
+                                    data-toggle="tooltip" data-placement="bottom" title="Añadir Paso."><i class="icon-plus-outline "></i></button>
+                            </section>
+                        </section>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+            <section class="col-12 my-5">
+                <section class="row">
+                    <section class="col-12 text-center">
+                        <h4>Selecciona las categorías de tu receta.</h4>
+                    </section>
+                    <section class="panel panel-default col-3">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading pl-2">Personas</div>
+
+                        <!-- List group -->
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="diabetica">Diabetica</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="diabetica" name="someSwitchOption001" type="checkbox" />
+                                    <label for="diabetica" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="fitness">Fitness</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="fitness" name="someSwitchOption001" type="checkbox" />
+                                    <label for="fitness" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="celiaco">Celiaco</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="celiaco" name="someSwitchOption001" type="checkbox" />
+                                    <label for="celiaco" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="alergia">Alergia</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="alergia" name="someSwitchOption001" type="checkbox" />
+                                    <label for="alergia" class="badge-primary"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="panel panel-default col-3">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading pl-2">Producto</div>
+
+                        <!-- List group -->
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="pan">Pan</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="pan" name="someSwitchOption001" type="checkbox" />
+                                    <label for="pan" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="tortas">Tortas</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="tortas" name="someSwitchOption001" type="checkbox" />
+                                    <label for="tortas" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="galletas">Galletas</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="galletas" name="someSwitchOption001" type="checkbox" />
+                                    <label for="galletas" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="chocolate">Chocolate</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="chocolate" name="someSwitchOption001" type="checkbox" />
+                                    <label for="chocolate" class="badge-primary"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="panel panel-default col-3">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading pl-2">Celebración</div>
+
+                        <!-- List group -->
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="cumpleaños">Cumpleaños</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="cumpleaños" name="someSwitchOption001" type="checkbox" />
+                                    <label for="cumpleaños" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="boda">Boda</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="boda" name="someSwitchOption001" type="checkbox" />
+                                    <label for="boda" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="baby-shower">Baby Shower</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="baby-shower" name="someSwitchOption001" type="checkbox" />
+                                    <label for="baby-shower" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="aniversario">Aniversario</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="aniversario" name="someSwitchOption001" type="checkbox" />
+                                    <label for="aniversario" class="badge-primary"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="panel panel-default col-3">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading pl-2">Autoria</div>
+
+                        <!-- List group -->
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="propia">Propia</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="propia" name="someSwitchOption001" type="checkbox" />
+                                    <label for="propia" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="variante">Variante</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="variante" name="someSwitchOption001" type="checkbox" />
+                                    <label for="variante" class="badge-primary"></label>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <label class="form-check-label pl-0" for="otro">Otro</label>
+                                <div class="material-switch pull-right">
+                                    <input class="form-control" id="otro" name="someSwitchOption001" type="checkbox" />
+                                    <label for="otro" class="badge-primary"></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-6 ">
+                <input type="text" class="form-control" name="autor" id="autor" placeholder="Nombre del Autor.">
+            </section>
+            <section class="col-6 d-flex justify-content-center">
+                <button type="button" class="btn btn-primary btn-circle">
+                    <i class="icon-pencil"></i>
+                    <span>COMPARTIR</span>
+                </button>
+            </section>
+        </form>
+
+    </main>
+    <footer class="container-fluid ">
+        <section class="row ">
+            <section class="col-6">
+                <span>Diseñado por Grupo #5/Desarrollado con Bootstrap-Laravel.</span>
+            </section>
+            <section class="col-6 d-flex justify-content-end">
+                <span>Proyecto Multimedia-Sistemas de Información.</span>
+            </section>
+        </section>
+    </footer>
+    <script src="js/publicar.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

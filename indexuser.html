@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dulces Gustos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Oswald:200,300,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="js/tether.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+        <header class="container-fluid d-flex flex-column ">
+                <!-- Menu Principal  para el tamaño LG-->
+                <section class="row nav align-items-stretch  fixed-top " id="navs">
+                    <section class="  contenedor-enlace align-items-stretch hidden-sm-down col-md-auto d-flex align-items-center justify-content-center justify-content-lg-start logo">
+                        <a class="" href="indexuser.html">
+                            <img src="img/logo.png" alt="Dulces Gustos">
+                        </a>
+                    </section>
+                    <!-- ojooo-->
+                    <section id="mini-menu" class="col-12 mini-menu buscar-1 hidden-md-up">
+                        <form action="">
+                            <section class="row no-gutters align-items-center">
+                                <section class="columna col-10">
+                                    <input type="text" name="" id="" placeholder="Recetas,Ingrediente,Tipo de Dieta">
+                                </section>
+                                <section class="columna col-2 align-items-center justify-content-center text-center">
+                                    <button><i class="icon-search-outline"></i></button>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+        
+                    <section id="mini-menu" class="col-6 hidden-md-up mini-menu reg-usu align-items-stretch">
+                        <a href="publicacion.html" class="d-flex  text-center  flex-column ">
+                            <i class="icono icon-pencil"></i>
+                            <span>Publica tus Recetas o Tips</span>
+                        </a>
+                    </section>
+                    <!--Fin ojo-->
+        
+                    <nav id="mini-menu" class="  menu contenedor-enlace flex-wrap flex-md-nowrap mini-menu flex-wrap  d-flex col-12 col-md-5 ">
+                        <a href="recetas.html" class="c-1 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Recetas</span>
+                                <i class="icono icon-book"></i>
+                            </section>
+                        </a>
+                        <a href="tips.html" class="c-2 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Tips</span>
+                                <i class="icono icon-magic"></i>
+                            </section>
+                        </a>
+                        <a href="nosotros.html" class="c-3 col-12 col-md-4 justify-content-center enlace d-flex align-items-center">
+                            <section class="d-flex flex-column text-center">
+                                <span>Nosotros</span>
+                                <i class="icono icon-child"></i>
+                            </section>
+                        </a>
+                    </nav>
+                    <!-- AQUI VA LO QUE SE VA A MODIFICAR-->
+                    <section id="mini-menu" class="col-6 icons mini-menu log  text-center col-md-1 d-flex align-items-stretch justify-content-center align-items-center colum-icons">
+                        <a href="usuario.html"  class="d-flex  enlace align-items-center align-items-stretch flex-column ">
+                            <i class="icono icon-user"></i>
+                            <span>Hola, Dulces.</span>
+                        </a>
+                    </section>
+                    <section id="mini-menu" class="col-12 icons mini-menu help  text-center col-md-1 d-flex align-items-stretch justify-content-center align-items-center colum-icons">
+                        <a href="index.html"  class="d-flex  align-items-center align-items-stretch flex-column ">
+                            <i class="icono icon-cancel-outline"></i>
+                            <span>Desconectar</span>
+                        </a>
+                    </section>
+                </section>
+        
+                <a href="#" class="fondo-enlace hidden-md-up" id="fondo-enlace"></a>
+        
+                <section class="row hidden-sm-down  extra-btn d-flex rounded-top justify-content-between align-items-stretch">
+                    <section class="col-md-7 col-12 buscar  flex-wrap flex-sm-nowrap ">
+                        <form action="">
+                            <section class="row no-gutters align-items-center">
+                                <section class="columna col-10">
+                                    <input type="text" name="" id="" placeholder="Recetas,Ingrediente,Tipo de Dieta">
+                                </section>
+                                <section class="columna col-2">
+                                    <button><i class="icon-search-outline"></i></button>
+                                </section>
+                            </section>
+                        </form>
+                    </section>
+                    <section class="col-md-4 col-lg-3 col-12  reg-col d-flex align-items-stretch align-items-center">
+                        <a class="registro d-flex flex-column text-center align-items-center" href="publicacion.html">
+                            <i class="icono icon-pencil"></i>
+                            <span>Publica tus Recetas o Tips</span>
+        
+                        </a>
+                    </section>
+                </section>
+        
+        
+                <!-- Final del Menu Principal para el tamaño LG-->
+                <section class="row btn-menu d-flex justify-content-between hidden-md-up ">
+                    <a href="index.html" class="logo-menu col-2 d-flex flex-column justify-content-start">
+                        <!--<span>DG</span>-->
+                       <span>DG</span>
+                    </a>
+                    <a href="#" class="menu-icon col-10 d-flex flex-column justify-content-center align-items-end" id="btn-menus">
+                        <i class="icon-menu-outline icon-lg"></i>
+                    </a>
+                </section>
+        
+                <aside id="Social-nav" class="social-nav sticky-container">
+                    <ul>
+                        <li class="shop">
+                            <a href="#">
+                                <i class="icon-basket-1"></i>
+                                <span class="shop-text">Ver Tienda</span>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="icon-facebook"></i>
+                                <span class="name-social">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="icon-instagram"></i>
+                                <span class="name-social">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <i class="icon-youtube"></i>
+                                <span class="name-social">Youtube</span>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/GustosDulces" target="_blank">
+                                <i class="icon-twitter"></i>
+                                <span class="name-social">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <!--FIn cambio-->
+            </header>
+    <main class="container-fluid">
+        <section class="row bread-nav w-100">
+            <nav aria-label=" col-12 breadcrumb w-100">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+        </section>
+
+        <section id="prueba1" class="row  justify-content-center align-items-center">
+            <section class="col-12 col-lg-6 welcome d-flex column-flex text-center align-items-center justify-content-center"
+                id="welcome">
+                <section class="row d-flex justify-content-center welcome-row">
+                    <section class="col-12 justify-content-center align-items-end d-flex column-flex fil-inter">
+                        <span class="welcome-text d-flex align-items-center"><i class="icon-bandcamp icon"></i>Bienvenidos
+                            a<i class="icon icon-bandcamp "></i></span>
+                    </section>
+
+                    <section class="col-12 d-flex justify-content-center nombre-empresa-col">
+                        <h1 class="nombre-empresa">Dulces Gustos</h1>
+                    </section>
+                    <section class="col base-nombre">
+                        <i class="icon-snowflake-o ics"></i>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 col-lg-6 wwm col-quest d-flex column-flex text-center align-items-center justify-content-center"
+                id="wwm">
+                <section class="row quest-1 justify-content-center d-flex align-items-center">
+                    <section class="col-12  justify-content-center align-items-end d-flex">
+                        <span class="question-1">¿Qué quieres preparar hoy?</span>
+                    </section>
+                    <section class="col-12 ">
+                        <section class="row no-gutters justify-content-center align-items-start">
+                            <section class="col-12 bus-2 ">
+                                <form action="">
+                                    <input type="text" name="" id="" placeholder="Galletas/Tortas/Chocolate/etc...">
+                                </form>
+                            </section>
+                            <section class="col-6">
+                                <button class="btn btn-success" id="comenzar">! Comenzar ¡</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 hidden-xs-up wwm col-quest d-flex column-flex text-center align-items-center justify-content-center"
+                id="wwm-1">
+                <section class="row quest-1 justify-content-center d-flex align-items-center">
+                    <section class="col-12  justify-content-center align-items-end d-flex">
+                        <span class="question-1">¿Posee alguna alergia?</span>
+                    </section>
+                    <section class="col-12 ">
+                        <section class="row no-gutters justify-content-between align-items-start">
+                            <section class="col-12 bus-2 ">
+                                <form action="">
+                                    <input type="text" name="" id="" placeholder="Si/No">
+                                </form>
+                            </section>
+
+                            <section class="col-3 next-step">
+                                <button type="button" class="btn btn-danger  " id="step1-prev">
+                                    <i class="icon-left-open-outline"></i>
+                                </button>
+                            </section>
+                            <section class="col-3 next-step">
+                                <button class="btn btn-success " id="step1-next">
+                                    <i class="icon-right-open-outline"></i>
+                                </button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 hidden-xs-up wwm col-quest d-flex column-flex text-center align-items-center justify-content-center"
+                id="wwm-2">
+                <section class="row quest-1 justify-content-center d-flex align-items-center">
+                    <section class="col-12  justify-content-center align-items-end d-flex">
+                        <span class="question-1">¿Algun ingrediente adicional?</span>
+                    </section>
+                    <section class="col-12 ">
+                        <section class="row no-gutters justify-content-between align-items-start">
+                            <section class="col-12 bus-2 ">
+                                <form action="">
+                                    <input type="text" name="" id="" placeholder="Mani, Almendra, etc">
+                                </form>
+                            </section>
+
+                            <section class="col-3 next-step">
+                                <button type="button" class="btn btn-danger  " id="step2-prev">
+                                    <i class="icon-left-open-outline"></i>
+                                </button>
+                            </section>
+                            <section class="col-3 next-step">
+                                <button class="btn btn-success " id="step2-next">
+                                    <i class="icon-right-open-outline"></i>
+                                </button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 hidden-xs-up wwm col-quest d-flex column-flex text-center align-items-center justify-content-center"
+                id="wwm-3">
+                <section class="row quest-1 justify-content-center d-flex align-items-center">
+                    <section class="col-12  justify-content-center align-items-end d-flex">
+                        <span class="question-1">¿Algun ingrediente que no desee utilizar?</span>
+                    </section>
+                    <section class="col-12 ">
+                        <section class="row no-gutters justify-content-between align-items-start">
+                            <section class="col-12 bus-2 ">
+                                <form action="">
+                                    <input type="text" name="" id="" placeholder="Leche, Huevo, Azucar, etc">
+                                </form>
+                            </section>
+
+                            <section class="col-3 next-step">
+                                <button type="button" class="btn btn-danger  " id="step3-prev">
+                                    <i class="icon-left-open-outline"></i>
+                                </button>
+                            </section>
+                            <section class="col-3 next-step">
+                                <button class="btn btn-success " id="step3-next">
+                                    <i class="icon-right-open-outline"></i>
+                                </button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-12 hidden-xs-up wwm col-quest d-flex column-flex text-center align-items-center justify-content-center"
+                id="wwm-4">
+                <section class="row quest-1 justify-content-center d-flex align-items-center">
+                    <section class="col-12  justify-content-center align-items-end d-flex">
+                        <span class="question-1">¿Algun producto para gusto especifico?</span>
+                    </section>
+                    <section class="col-12 ">
+                        <section class="row no-gutters justify-content-between align-items-start">
+                            <section class="col-12 bus-2 ">
+                                <form action="">
+                                    <input type="text" name="" id="" placeholder="Diabetico, Fitness, Celiaco, etc">
+                                </form>
+                            </section>
+
+                            <section class="col-3 next-step">
+                                <button type="button" class="btn btn-danger  " id="step4-prev">
+                                    <i class="icon-left-open-outline"></i>
+                                </button>
+                            </section>
+                            <section class="col-3 next-step">
+                                <a href="recetas.html">
+                                    <button class="btn btn-success " id="step4-next">
+                                        <i class="icon-right-open-outline"></i>
+                                    </button>
+                                </a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="row  ">
+            <section class="col-12 col-lg-9 steps">
+                <section class="row no-gutters d-flex carousel carousel-fade slide " id="principal-carousel" data-ride="carousel">
+                    <ol class="col-2 carousel-list-items carousel-indicators justify-content-center d-flex  flex-wrap flex-column">
+                        <li data-target="#principal-carousel" data-slid-to="0" data-interval="1" class="active d-flex justify-content-center align-items-center steps-items ">
+                            <label>Compartir</label>
+                        </li>
+                        <li data-target="#principal-carousel" data-slid-to="1" data-interval="1" class="d-flex justify-content-center align-items-center steps-items ">
+                            <label>PASO 1</label>
+                        </li>
+                        <li data-target="#principal-carousel" data-slid-to="2" data-interval="1" class="d-flex justify-content-center align-items-center steps-items ">
+                            <label>PASO 2</label>
+                        </li>
+                        <li data-target="#principal-carousel" data-slid-to="3" data-interval="1" class="d-flex justify-content-center align-items-center steps-items ">
+                            <label>PASO 3</label>
+                        </li>
+                        <li data-target="#principal-carousel" data-slid-to="4" data-interval="1" class="d-flex justify-content-center align-items-center steps-items ">
+                            <label>PASO 4</label>
+                        </li>
+                    </ol>
+                    <section class="col-10 carousel-inner carousel-canvas">
+                        <section class="carousel-item  carousel-content content-0 active">
+                            <article class="row no-gutters  d-flex justify-content-center">
+                                <h4 class="col-12 text-center mt-3">Comparte tus Secretos</h4>
+                                <p> Esa receta que te enorgullece, que a pasado en tu familia
+                                    de generación en generación, o esos secretos que hacen tu
+                                    preparación especial compartela con nostros.</p>
+                                <h4 class="col-12 text-center">ES MUY FACIL</h4>
+                            </article>
+                        </section>
+
+                        <section class="carousel-item  carousel-content content-1 ">
+                            <section class="row  ">
+                                <h5 class="col-12">Inicia sesión</h5>
+                            </section>
+
+                        </section>
+                        <section class="carousel-item  carousel-content content-2 ">
+                            <section class="row  ">
+                                <h5 class="col-12">Compartir Recetas...</h5>
+                            </section>
+                        </section>
+                        <section class="carousel-item  carousel-content content-3 ">
+                            <section class="row  ">
+                                <h5 class="col-12">Completa los campos</h5>
+                            </section>
+                        </section>
+                        <section class="carousel-item  carousel-content content-4 ">
+                            <section class="row  ">
+                                <h5 class="col-12">Compartir </h5>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="hidden-md-down col-lg-3 content-twitter">
+                <a class="twitter-timeline" href="https://twitter.com/GustosDulces?ref_src=twsrc%5Etfw">Tweets by
+                    GustosDulces</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+        </section>
+
+        <section class="row d-flex notices">
+            <section class=" col-6  receta-destacada hero-image">
+                <a href="#" class="d-flex justify-content-between flex-column align-items-between">
+                    <header class="hero-title">
+                        <h1> Receta destacada de la semana</h1>
+                    </header>
+
+                    <footer class="hero-text">
+                        <h3 class="title">Ponquesitos</h3>
+                        <p class="info-receta">Dulces gustos comparte la receta de ponquesitos con una gran variedad de sabores y colores.!</p>
+                    </footer>
+                </a>
+            </section>
+
+            <section class="col-6 col-md-3 hero-image receta-nueva">
+                <a href="#" class="d-flex justify-content-between wrap flex-column align-items-between">
+                    <header class="hero-title">
+                        <h1> Nueva receta</h1>
+                    </header>
+
+                    <footer class="hero-text">
+                        <h3 class="title">Souffle Glace</h3>
+                        <p class="info-receta">Souffle Glace es un postre muy delicioso, con un solo bocado endulzas la vida.!</p>
+                    </footer>
+                </a>
+            </section>
+
+            <section class="col-12 col-md-3 col-mini-sec d-flex flex-column">
+                <section class="row mini-sec d-flex">
+                    <section class="col-12 hero-image tips-nuevo">
+                        <a href="tips.html" class="d-flex justify-content-between wrap flex-column align-items-between">
+                            <header class="hero-title">
+                                <h1> Tip Nuevo</h1>
+                            </header>
+
+                            <footer class="hero-text">
+                                <h3 class="title">Preservar la levadura</h3>
+                                <p class="info-receta">El cuidado de la levadura ayuda en el momento de preparar cualuier pan. </p>
+                            </footer>
+                        </a>
+                    </section>
+                    <section class="col-12 hero-image receta-estrella">
+                        <a href="receta.html" class="d-flex justify-content-between wrap flex-column align-items-between">
+                            <header class="hero-title">
+                                <h1> Receta Estrella</h1>
+                            </header>
+
+                            <footer class="hero-text">
+                                <h3 class="title">Fresa Diamante</h3>
+                                <p class="info-receta">Una delicia a base de hojaldre. </p>
+                            </footer>
+                        </a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="container-fluid ">
+        <section class="row ">
+            <section class="col-6">
+                <span>Diseñado por Grupo #5/Desarrollado con Bootstrap-Laravel.</span>
+            </section>
+            <section class="col-6 d-flex justify-content-end">
+                <span>Proyecto Multimedia-Sistemas de Información.</span>
+            </section>
+        </section>
+    </footer>
+    <script src="js/principal.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

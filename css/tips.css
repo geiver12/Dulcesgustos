@@ -1,0 +1,49 @@
+        .content-tips{
+            overflow: auto;
+            height: 58vh;
+        }
+
+        .tips-1,
+        .tips-3{
+            background: #6271b3;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            
+        }
+        .tips-2,
+        .tips-4{
+            background: #fff;
+            border: 1px solid #6271b3;
+            border-radius: 25px;
+        }
+
+        .tips-1 h3,
+        .tips-3 h3{
+            color: #fff;
+        }
+        
+        .tips-2 h3,
+        .tips-4 h3{
+            color: #6271b3;
+        }
+
+        .tips-1 .card,
+        .tips-3 .card{
+            background: wheat;
+        }
+
+        .tips-1 .card-body h5,
+        .tips-3 .card-body h5{
+            color:#9b030a;
+        }
+
+        .tips-2 .card,
+        .tips-4 .card{
+            background: #9b030a;
+            color: #fff;
+        }
+
+        .tips-2 .card-body h5,
+        .tips-4 .card-body h5{
+            color:wheat;
+        }

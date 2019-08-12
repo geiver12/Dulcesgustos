@@ -1,0 +1,653 @@
+
+
+
+/*------------------------------------Main------------------------------------*/
+/*-----------------------------Bienvenidos-WWM--------------------------------*/
+
+
+
+.welcome, .wwm{
+    height: 250px;
+    padding: 0;
+}
+
+.next-step .btn{
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    line-height: 30px;
+    width: 50px;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.welcome::after{
+    padding: 0;
+     margin: 0;
+     content: '';
+     width:0px;
+     height:0px;
+     border-top-color: #979cb3;
+     border-bottom-color: #979cb3;
+     border-right-color: #e0ddd2;
+     border-style: solid;
+     border-width: 125px 30px 125px 30px ;
+     border-left-color: #979cb3;
+     margin-left: -1px;
+ }
+
+.welcome-row{
+    
+    height: 100%;
+    color:white;
+    background: linear-gradient(to right,#6271b3 20%,#979cb3 100%);
+    padding: 0;
+    margin: 0;
+    
+}
+.base-nombre::before,
+.base-nombre::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 44%;
+    height: 0;
+    top:25%;
+    transform: translateY(-50%);
+    border-top: 3px dotted #fff;
+}
+.base-nombre::after{
+    left: 53%;
+}
+.base-nombre::before{
+    left: 3%;
+}
+.fil-inter{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.fil-inter .icon{
+    color:#d1d1d1;
+    margin: 0px 5px;
+}
+.welcome-text{
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: #9b030a;
+    height: 37px;
+    
+
+}
+.fil-inter::before{
+    padding: 0;
+     margin: 0;
+     content: '';
+     width:0px;
+     height:0px;
+     border-top-color: #9b030a;
+     border-bottom-color: #9b030a;
+     border-right-color:#9b030a;
+     border-style: solid;
+     border-width: 18.5px;
+     border-left-color:transparent;
+}
+.fil-inter::after{
+    padding: 0;
+     margin: 0;
+     content: '';
+     width:0px;
+     height:0px;
+     border-top-color: #9b030a;
+     border-bottom-color: #9b030a;
+     border-right-color: transparent;
+     border-style: solid;
+     border-width: 18.5px;
+     border-left-color: #9b030a;
+}
+.nombre-empresa-col{
+    height: 60px;
+}
+.nombre-empresa{
+font-size: 50px;
+font-family: 'Fontdiner Swanky',sans-serif;
+}
+.welcome-text .icon{
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 0;
+   
+    float: none;
+
+}
+.col-quest{
+    background: linear-gradient(to right,#e0ddd2 20%, wheat 100%);
+}
+.quest-1{
+    color:#9b030a;
+    height: 100%;
+    
+}
+.bus-2{
+    height: 40px;
+    margin-bottom: 20px;
+}
+.quest-1 form input[type="text"]{
+    width: 100%;
+    background: linear-gradient(to left,#e0ddd2 0%,#ffffff 100%);;
+    border: none;
+    font-size: 20px;
+    padding:0 10px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px 0 0 3px;
+    font-family:'oswald', sans-serif;
+    margin-bottom: 5px;
+} 
+button{
+    cursor: pointer;
+}
+
+.question-1{
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}
+/*------------------------------------------*/
+
+.steps{
+    height: 400px;
+    padding: 0;
+}
+
+.steps > .carousel{
+    height: 100%;
+    display: inline-block;
+}
+
+.carousel-canvas{
+    background:rgba(0,0,0,.5);
+    min-width: 300px;
+    width: 100%
+
+}
+
+.steps .carousel-list-items{
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+
+}
+
+.steps .carousel-content{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.content-0{
+    background-image: url('../img/fondo-paso-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-1{
+    background-image: url('../img/paso0.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.content-2{
+    background-image: url('../img/paso1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-3{
+    background-image: url('../img/paso2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-4{
+    background-image: url('../img/paso3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-indicators{
+    position: relative;
+    z-index: 3;
+}
+
+
+.carousel-indicators li{
+    max-width: 160px;
+    text-indent: 0;
+    min-height: 50px;
+    flex:0;
+    bottom:0;
+}
+.steps .steps-items{
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+
+
+.carousel-item h5{
+    color: #9b030a;
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+
+
+    
+}
+
+article{
+    transform: translateZ(-100000px);
+    transition: all .1s ease;
+}
+
+.content-twitter{
+    overflow: auto;
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.content-0.active >article{
+    transform: translateZ(0px);
+    transition: all .5s ease;
+}
+
+article > h4{
+    height: 50px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #9b030a;
+
+
+}
+article > p{
+    text-align: justify;
+    font-size: 25px;
+    padding: 0 60px;
+    
+}
+
+.steps .steps-items.active{
+border-right: 5px solid #6271b3;
+background: rgb(243, 213, 213);
+}
+
+li> label{
+    cursor: none;
+}
+
+
+
+
+
+.notices{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background: none;
+    padding: 10px;
+    margin-top: 5px;
+
+
+}
+
+.notices header{
+    min-height: auto;
+    background:rgba(255,255,255,.8);
+    color: #9b030a;
+    height: auto;
+    padding: 0;
+}
+
+.notices > .hero-image{
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    border:2px solid white
+
+}
+.notices .col-mini-sec,
+.notices .col-mini-sec .tips-nuevo,
+.notices .col-mini-sec .receta-estrella{
+    width: 100%;
+    padding: 0;
+}
+.notices .col-mini-sec{
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+
+.notices .col-mini-sec .tips-nuevo,
+.notices .col-mini-sec .receta-estrella{
+    height: 50%;
+}
+
+.notices .col-mini-sec .row{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.notices > .receta-destacada.hero-image{
+    background-image:  url("../img/recetas/ponquesitos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.notices > .receta-nueva.hero-image{
+    background-image:  url("../img/recetas/soufleglace-chocolate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.notices > .receta-nueva.hero-image:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/recetas/soufleglace-chocolate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.notices  .tips-nuevo.hero-image,
+.notices  .receta-estrella.hero-image{
+    height: 142px;
+
+}
+
+
+.notices  .tips-nuevo.hero-image h1,
+.notices  .receta-estrella.hero-image h1{
+    font-size: 20px;
+    padding: 0;
+    padding-left: 5px;
+    height: auto;
+}
+
+.notices  .tips-nuevo.hero-image h3,
+.notices  .receta-estrella.hero-image h3{
+    font-size: 18px;
+}
+
+
+
+.notices  .tips-nuevo.hero-image{
+    background-image:  url("../img/tips-nuevo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 2px solid white;
+}
+.notices  .receta-estrella.hero-image{
+    background-image:  url("../img/recetas/fresa-diamante.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-top: 2px solid white;
+ 
+}
+.notices .receta-estrella.hero-image:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/recetas/fresa-diamante.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.notices  .tips-nuevo.hero-image:hover{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/tips-nuevo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+.notices .hero-image h1{
+    padding: 5px;
+}
+
+
+
+.notices .receta-estrella .hero-text,
+.notices .tips-nuevo .hero-text{
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    transform: translateY(59%);
+    transition: all .3s ease;
+
+}
+
+
+.hero-image a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+.notices .hero-image:hover header{
+    background:rgba(245,222,179);
+
+}
+
+.notices h3{
+    margin: 0;
+    padding: 5px;
+    color: rgba(245,222,179);
+
+}
+
+.notices .hero-image:hover footer > h3{
+    background: rgba(0,0,0,1);
+}
+
+.notices .receta-destacada.hero-image:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/recetas/ponquesitos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.notices .hero-image:hover .hero-text{
+    transform: translateY(0%);
+}
+.notices .hero-image:hover .info-receta{
+    visibility:visible;
+    color: white;
+}
+
+.notices .receta-destacada .hero-text{
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    transform: translateY(55%);
+    transition: all .3s ease;
+
+}
+
+.notices .receta-nueva .hero-text{
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    transform: translateY(60%);
+    transition: all .3s ease;
+
+}
+
+.notices .receta-nueva h1{
+    font-size: 30px;
+}
+.notices .receta-nueva h3{
+    font-size: 25px;
+}
+.notices .hero-text{
+    height: auto;
+    bottom: 0;
+}
+
+.notices .hero-text .info-receta{
+    padding: 0px 10px;
+    text-align: justify;
+    visibility: hidden;
+}
+
+/*-------------------------- MEDIA SCREEN--------------------------------*/
+@media screen and (max-width:1200px){
+    .notices .receta-nueva .hero-text{
+        transform: translateY(60%);
+        transition: all .3s ease;
+    
+    }
+
+    .notices .receta-destacada h1{
+        font-size:35px; 
+    }
+    .notices .receta-destacada h3{
+        font-size:25px; 
+    }
+}
+
+
+@media screen and (max-width:991px){
+    .col-quest{
+        height: 350px;
+        background-image: url("../img/main1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .question-1{
+        background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,rgba(255,255,255,.8) 100%);
+        border-radius: 25px;
+        padding: 5px;
+    }
+
+    .welcome-row{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .welcome::after{
+        content: none;
+     }
+     .welcome-row{
+        color:white;
+        background: linear-gradient(to bottom, #979cb3 0%,#6271b3  90%);
+     }
+   
+     
+     .notices .receta-nueva .hero-text, 
+     .notices .tips-nuevo .hero-text,
+     .notices .receta-estrella .hero-text{
+        transform: translateY(60%);
+        transition: all .3s ease;
+    }
+
+    .notices .receta-destacada .hero-text{
+        transform: translateY(60%);
+        transition: all .3s ease;
+    }
+    .notices .receta-nueva h1{
+        font-size:26px; 
+    }
+    .notices .receta-nueva h3{
+        font-size:20px; 
+    }
+    .notices .receta-nueva .info-receta{
+        font-size: 15px;
+    }
+
+    .notices .tips-nuevo .hero-text .info-receta,
+    .notices .receta-estrella .hero-text .info-receta{
+        font-size: 13px;
+    }
+
+    .notices .receta-destacada h1{
+        font-size: 26px;
+    }
+
+    .notices .receta-destacada h3{
+        font-size: 20px;
+    }
+    .notices .receta-destacada .hero-text .info-receta{
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width:767px){
+
+    
+    .notices{
+        height: auto;
+    }
+    
+    .notices .receta-destacada,
+    .notices .receta-nueva{
+        height: auto;
+    }
+
+    .notices .receta-destacada h1,
+    .notices .receta-nueva h1{
+        font-size: 22px;
+    }
+
+    .notices .receta-destacada h3,
+    .notices .receta-nueva h3{
+        font-size: 18px;
+    }
+    .notices .receta-destacada p,
+    .notices .receta-nueva p{
+        font-size: 13px;
+    }
+    .notices .receta-estrella .hero-text, 
+    .notices .tips-nuevo .hero-text{
+       transform: translateY(60%);
+       transition: all .3s ease;
+   }
+
+   .notices .receta-nueva .hero-text,
+   .notices .receta-destacada .hero-text{
+       transform: translateY(70%);
+       transition: all .3s ease;
+   }
+  
+}

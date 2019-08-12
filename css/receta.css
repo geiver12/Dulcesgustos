@@ -1,0 +1,83 @@
+
+        .info-receta{
+            min-height: 400px;
+        }
+      
+
+        .rec-title{
+            background: #6271b3;
+        }
+        .info-receta img{
+           
+            height: 100%;
+            width: 70%;
+            float: left;
+            margin-right: 20px;
+
+        }
+        .info-receta h3
+        {
+            background: none;
+            color: #9b030a;
+            font-size: 40px;
+            font-family: 'Fontdiner Swanky',sans-serif;
+        }
+
+        .info-receta h4
+        {
+            background: none;
+            color: #9b030a;
+            font-size: 25px;
+            font-family: 'Fontdiner Swanky',sans-serif;
+        }
+
+        .info-receta header{
+            background: none;
+            height: auto;
+        }
+        .comple-info{
+            height: auto;
+            width: auto;
+            color:#6271b3;
+            padding-top:10%; 
+        }
+        .info-des{
+            height: 250px;
+        }
+
+        .info-receta footer{
+            color: #979cb3;
+            text-align: justify;
+        }
+        .content-receta{
+            padding: 5px;
+        }
+        main ul,
+        main li,
+        .card p{
+            list-style: none;
+            color:#fff;
+        }
+
+        main li i,
+        .card-title,
+        form label{
+            color: rgba(245,222,179);
+        }
+
+        .card-header{
+            background: rgba(245,222,179);
+        }
+
+        main >.col-6{
+            max-width: 100%;
+        }
+
+        .info-receta .card{
+            width: 100%;
+        }
+
+
+        .card{
+            background: #6271b3;
+        }

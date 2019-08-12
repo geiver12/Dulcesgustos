@@ -1,0 +1,18 @@
+.panel{
+    font-family:'oswald', sans-serif;
+    background: #6271b3;
+    color: rgba(245,222,179);
+}
+
+.panel-heading{
+    background: #9b030a;
+}
+.panel-title{
+    font-family: 'Fontdiner Swanky',sans-serif; 
+    font-size: 30px;
+    color: #fff;
+}
+
+.control-label{
+    font-size: 15px;
+}
